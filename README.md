@@ -9,28 +9,23 @@ yarn dev
 
 ## Goal
 
-Complete the provided React program to ask a series of Yes/No questions. After each run, a rating is calculated to let them know how they did. A second rating is also calculated to provide an overall score for all runs.
+Complete this React program to ask the end user a series of Yes/No questions, calculate and report the score back to them after each run. Additionally, calculate and report overall score for all runs.
 
 ## Requirements
 
-The user should be able to select "Yes" or "No" to each question.
+Given I am a user accessing the webapp 
+When I run the application
+Then I should be presented with a series of questions that can only be answered as a Yes or a No
+Score should be calculated using the following equation : 100 * number of yes answers/number of questions
+And the calculated score should be printed
 
-The answers will need to be **persisted** so they can be used in calculations for subsequent runs. You may wish to use any persistent storage you seem fit
+When I re-run the application
+then the program should also print an average rating for all runs
 
-After _each_ run the program should calculate and print a rating. The calculation for the rating is: `100 * number of yes answers / number of questions`.
+Notes: 
 
-The program should also print an average rating for all runs.
+Please feel free to use a persistent storage you seem fit for example Node-Persist
 
-The questions can be found in src/questions.ts
+The questions can be found in src/questions.ts.
 
-Ensure we can run your exercise
-
-## Bonus Points
-
-Updated readme with an explanation of your approach
-
-Unit Tests
-
-Code Comments
-
-Dockerfile / Bash script if needed for us to run the exercise
+Ensure we can run your exercise.
