@@ -22,10 +22,7 @@ And the calculated score should be printed
 When I re-run the application\
 then the program should also print an average rating for all runs
 
-Notes:
-
-Please feel free to use a persistent storage you seem fit for example Node-Persist
-
-The questions can be found in src/questions.ts.
-
+Notes:\
+Please feel free to use a persistent storage you seem fit for example Node-Persist\
+The questions can be found in src/questions.ts.\
 Ensure we can run your exercise.
